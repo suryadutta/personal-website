@@ -58,7 +58,7 @@ mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 
 								<!-- Content -->
 									<section id="content">
-										<h3> Thank you for your submission! </br>I will get back to you as soon as possible. </h3>
+										<h3> Thank you for your submission, <?php echo htmlspecialchars($_POST['name']); ?>.! </br>I will get back to you as soon as possible. </h3>
 									</section>
 
 							</div>
