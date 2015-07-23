@@ -1,12 +1,22 @@
-<?php $name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-$formcontent="From: $name \n Message: $message";
-$recipient = "suryabrata.dutta@gmail.com";
-$subject = "Contact Form";
-$mailheader = "From: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+<?PHP
+  // form handler
+  if($_POST && isset($_POST['sendmessage'], $_POST['name'], $_POST['email'], $_POST['message'])) {
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+      $to = "suryabrata.dutta@gmail.com";
+      if(!$subject) $subject = "Contact from website";
+      $headers = "From: webmaster@example.com" . "\r\n";
+      mail($to, $subject, $message, $headers);
+      header("Location: index.html");
+      exit;
+    
+
+  }
 ?>
+
 <!DOCTYPE HTML>
 <!--
 	Landed by HTML5 UP
@@ -58,7 +68,25 @@ mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 
 								<!-- Content -->
 									<section id="content">
-										<h3> Thank you for your submission, <?php echo htmlspecialchars($_POST['name']); ?>.! </br>I will get back to you as soon as possible. </h3>
+										<form method="POST" action="<?PHP echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+									<div class="row uniform 50%">
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="name" id="name" placeholder="Name" value="<?PHP if(isset($_POST['name'])) echo htmlspecialchars($_POST['name']); ?>" required/>
+										</div>
+										<div class="6u$ 12u$(xsmall)">
+											<input type="email" name="email" id="email" placeholder="Email" value="<?PHP if(isset($_POST['email'])) echo htmlspecialchars($_POST['email']); ?>" required/>
+										</div>
+										<div class="12u$">
+											<textarea name="message" id="message" placeholder="Enter your message" rows="6" required><?PHP if(isset($_POST['message'])) echo htmlspecialchars($_POST['message']); ?></textarea>
+										</div>
+										<div class="12u$">
+											<ul class="actions">
+												<li><input type="submit" name="sendmessage" value="Send Message" class="special" /></li>
+												<li><input type="reset" value="Reset" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
 									</section>
 
 							</div>
