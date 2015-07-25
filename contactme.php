@@ -1,22 +1,3 @@
-<?PHP
-  // form handler
-  if($_POST && isset($_POST['sendmessage'], $_POST['name'], $_POST['email'], $_POST['message'])) {
-
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-
-      $to = "suryabrata.dutta@gmail.com";
-      if(!$subject) $subject = "Contact from website";
-      $headers = "From: webmaster@example.com" . "\r\n";
-      mail($to, $subject, $message, $headers);
-      header("Location: index.html");
-      exit;
-    
-
-  }
-?>
-
 <!DOCTYPE HTML>
 <!--
 	Landed by HTML5 UP
@@ -68,20 +49,20 @@
 
 								<!-- Content -->
 									<section id="content">
-										<form method="POST" action="<?PHP echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+										<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 									<div class="row uniform 50%">
 										<div class="6u 12u$(xsmall)">
-											<input type="text" name="name" id="name" placeholder="Name" value="<?PHP if(isset($_POST['name'])) echo htmlspecialchars($_POST['name']); ?>" required/>
+											<input type="text" name="name" id="name" value="" placeholder="Name" required/>
 										</div>
 										<div class="6u$ 12u$(xsmall)">
-											<input type="email" name="email" id="email" placeholder="Email" value="<?PHP if(isset($_POST['email'])) echo htmlspecialchars($_POST['email']); ?>" required/>
+											<input type="email" name="email" id="email" value="" placeholder="Email" required/>
 										</div>
 										<div class="12u$">
-											<textarea name="message" id="message" placeholder="Enter your message" rows="6" required><?PHP if(isset($_POST['message'])) echo htmlspecialchars($_POST['message']); ?></textarea>
+											<textarea name="message" id="message" placeholder="Enter your message" rows="6" required></textarea>
 										</div>
 										<div class="12u$">
 											<ul class="actions">
-												<li><input type="submit" name="sendmessage" value="Send Message" class="special" /></li>
+												<li><input type="submit" value="Send Message" class="special" /></li>
 												<li><input type="reset" value="Reset" /></li>
 											</ul>
 										</div>
