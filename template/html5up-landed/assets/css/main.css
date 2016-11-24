@@ -1,9 +1,9 @@
 @import url("font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 
 /*
 	Landed by HTML5 UP
-	html5up.net | @n33co
+	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
@@ -1567,7 +1567,7 @@
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
-		font-family: Century Gothic, sans-serif;
+		font-family: "Roboto", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 100;
 		line-height: 1.75em;
@@ -1579,12 +1579,12 @@
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #1775DE;
+		color: #e44c65;
 		text-decoration: none;
 	}
 
 		a:hover {
-			color: #1775DE !important;
+			color: #e44c65 !important;
 			border-bottom-color: transparent;
 		}
 
@@ -2133,7 +2133,7 @@
 	}
 
 		header.major:after {
-			background: #1775DE;
+			background: #e44c65;
 			content: '';
 			display: inline-block;
 			height: 0.2em;
@@ -2196,7 +2196,7 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #1775DE;
+			border-color: #e44c65;
 		}
 
 	.select-wrapper {
@@ -2313,7 +2313,7 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #1775DE;
+			border-color: #e44c65;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2459,6 +2459,7 @@
 			position: absolute;
 			left: 0;
 			top: 0;
+			background-image: url("images/overlay.png");
 			width: 100%;
 			height: 100%;
 			z-index: 1;
@@ -2733,8 +2734,8 @@
 		input[type="button"]:active,
 		.button:hover,
 		.button:active {
-			box-shadow: inset 0 0 0 1px #1775DE;
-			color: #1775DE !important;
+			box-shadow: inset 0 0 0 1px #e44c65;
+			color: #e44c65 !important;
 		}
 
 		input[type="submit"]:active,
@@ -2778,7 +2779,7 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #0f4d92;
+			background-color: #e44c65;
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -2787,14 +2788,14 @@
 			input[type="reset"].special:hover,
 			input[type="button"].special:hover,
 			.button.special:hover {
-				background-color: #1775de;
+				background-color: #e76278;
 			}
 
 			input[type="submit"].special:active,
 			input[type="reset"].special:active,
 			input[type="button"].special:active,
 			.button.special:active {
-				background-color: #1157a4;
+				background-color: #e13652;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -3019,7 +3020,7 @@
 		}
 
 		.spotlight.style1 .content {
-			border-color: #1775DE;
+			border-color: #e44c65;
 		}
 
 		.spotlight.style2 .content {
@@ -3081,7 +3082,7 @@
 	}
 
 		.wrapper.style2 {
-			background: #1775DE;
+			background: #e44c65;
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -3116,7 +3117,7 @@
 			.wrapper.style2 input[type="button"].special,
 			.wrapper.style2 .button.special {
 				background-color: #ffffff;
-				color: #1775DE !important;
+				color: #e44c65 !important;
 			}
 
 				.wrapper.style2 input[type="submit"].special:hover, .wrapper.style2 input[type="submit"].special:active,
@@ -3220,7 +3221,7 @@
 			}
 
 			.dropotron > li.active > a, .dropotron > li.active > span {
-				color: #1775DE;
+				color: #e44c65;
 			}
 
 		.dropotron.level-0 {
@@ -3310,7 +3311,7 @@
 						}
 
 					#header nav ul li.active > a, #header nav ul li.active > span {
-						color: #1775DE;
+						color: #e44c65;
 					}
 
 					#header nav ul li > ul {
@@ -3413,7 +3414,7 @@
 
 	#footer {
 		background: #272833;
-		padding: 3em 0;
+		padding: 6em 0;
 		text-align: center;
 	}
 
@@ -3789,7 +3790,7 @@
 					}
 
 					#titleBar .toggle:before {
-						background: #1775DE;
+						background: #e44c65;
 						color: rgba(255, 255, 255, 0.5);
 						content: '\f0c9';
 						display: block;
