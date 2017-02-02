@@ -37,9 +37,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 		-webkit-text-size-adjust: none;
 	}
 
-  body {
-  background: #242943;
-}
+	body {
+    background-image: url("giphy-1.gif");
+		background-size: 150px 200px;
+    background-repeat: repeat;
+		background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+      rgba(255, 0, 0, 0.45),
+      rgba(255, 0, 0, 0.45)
+    ),  url("giphy-1.gif");
+	}
 
   body.is-loading *, body.is-loading *:before, body.is-loading *:after {
     -moz-animation: none !important;
@@ -134,6 +142,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2.5em;
+	text-align: center;
 }
 
 h2 {
