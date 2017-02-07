@@ -38,8 +38,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	}
 
   body {
-  background: #242943;
-}
+			background-size: 500px 500px;
+	    background-repeat: repeat;
+			background:
+	    /* top, transparent red, faked with gradient */
+	    linear-gradient(
+	      rgba(255, 0, 0, 0.45),
+	      rgba(255, 0, 0, 0.45)
+	    ),  url("0.png"), no-repeat;
+		}
 
   body.is-loading *, body.is-loading *:before, body.is-loading *:after {
     -moz-animation: none !important;
