@@ -75,6 +75,7 @@ button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, tex
 .fun-facts,
 .services,
 .technical-skills,
+.education,
 .experiences,
 .portfolio { padding:  80px 0 40px;}
 .overlay {
@@ -651,6 +652,35 @@ a.selected-item:before, .side-menu a:hover:before {
 
 /* End technical skills section */
 
+/* ---------------------------------------
+			Start Education Section
+----------------------------------------- */
+
+.education {
+	background: #333 url('../img/bg3.jpg') no-repeat 50% 80% fixed;
+	background-size: cover;
+	position: relative;
+}
+.education h2 {
+	color: #eaeaea;
+	position: relative;
+}
+.education h3 {
+	color: #eaeaea;
+	position: relative;
+	padding-top: 20px;
+}
+.education h4 {
+	color: #eaeaea;
+	position: relative;
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+.education p.title {
+	color: #eaeaea;
+	position: relative;
+}
+.education .heading-line {background: #fff;}
 
 /* ---------------------------------------
 			Start  Experiences Section
