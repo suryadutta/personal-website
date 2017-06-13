@@ -24,8 +24,8 @@ if (empty($_POST["message"])) {
 }
 
 // Change to your E-mail && Subject
-$EmailTo = "info@example.com"; // change to your E-mail here
-$Subject = "Marqa-website";     // change to the subject you want
+$EmailTo = "suryabrata.dutta@yale.edu"; // change to your E-mail here
+$Subject = "Personal Website Contact Form";     // change to the subject you want
 
 // prepare email body text
 $Body = '<b>Name:</b> '.$name.' <br><b>E-mail</b> '.$mail.' <p>' .$message.'</p>';
