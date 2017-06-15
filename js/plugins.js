@@ -260,7 +260,6 @@ URL: https://themeforest.net/user/ahmedbeheiry
 
 	/* ---------------------------------------------------
 		14 - Contact Form Validation
-
 	var contactForm = $("#contact-form"),
 		submitBtn = $(".submit-btn"),
 		formResponse = $(".form-response");
@@ -272,6 +271,7 @@ URL: https://themeforest.net/user/ahmedbeheiry
 				submitForm();
 			}
 		});
+
 		// Submit Form
 		function submitForm() {
 			// Some Variables
@@ -298,6 +298,7 @@ URL: https://themeforest.net/user/ahmedbeheiry
 				}
 			});
 		}
+		----------------------------------------------------- */
 
 	// Moving placeholder on focus on any input in contact-me section //
 	$(".contact .form-control").focusout(function() {
@@ -310,7 +311,7 @@ URL: https://themeforest.net/user/ahmedbeheiry
 	});
 })(jQuery);
 
-	----------------------------------------------------- */
+
 
 /* ---------------------------------------------------
 	15 - Launching Google map
