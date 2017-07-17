@@ -6,11 +6,11 @@
 	// Thus the launchDay below denotes 7 May, 2014.
 
 var newYear = new Date();
-newYear = new Date("2017-01-16T17:30:00");
-newYear.setUTCDate(16);
-newYear.setUTCMonth(0);
-newYear.setUTCHours(22);
-newYear.setUTCMinutes(30);
+newYear = new Date("2017-08-10T12:25:00");
+//newYear.setUTCDate(16);
+//newYear.setUTCMonth(0);
+//newYear.setUTCHours(22);
+//newYear.setUTCMinutes(30);
 $('.defaultCountdown').countdown({until: newYear, format: 'DHMS'});
 
 
