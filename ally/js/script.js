@@ -6,7 +6,7 @@
 	// Thus the launchDay below denotes 7 May, 2014.
 
 var newYear = new Date();
-newYear = new Date("2017-08-10T12:25:00");
+newYear = new Date("2017-12-31T14:50:00");
 //newYear.setUTCDate(16);
 //newYear.setUTCMonth(0);
 //newYear.setUTCHours(22);
