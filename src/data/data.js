@@ -20,7 +20,7 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne: 'Hello! Thanks for coming to my site.',
-  paragraphTwo: 'I\'m a Lead Data Engineer at McMaster-Carr. I specialize in digital analytics and processing complex data streams. ',
+  paragraphTwo: 'I\'m a Senior Data Engineer at McMaster-Carr. I specialize in digital analytics and processing complex data streams. ',
   paragraphThree: 'Outside of work, I enjoy working on data science projects for social good. I\'m optimistic about how technology can democratize information and access, but realize that\'s not always the case. From civic tech to healthcare, I\'m always looking for new opportunities to make a positive impact!',
   resume: downloadResume, // if no resume, the button will not show up
 };
